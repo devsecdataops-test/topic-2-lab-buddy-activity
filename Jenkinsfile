@@ -5,15 +5,15 @@ pipeline {
         AZURE_ACR_NAME = 'labacrdevops2025'
         ACR_LOGIN_SERVER = "${AZURE_ACR_NAME}.azurecr.io"
 
-        # Original names (from peer)
+        // Original names (from peer)
         ORIGINAL_IMAGE_FRONTEND = "${ACR_LOGIN_SERVER}/opendevops-nyctaxiweb-optional-frontend:v1.0.0"
         ORIGINAL_IMAGE_BACKEND  = "${ACR_LOGIN_SERVER}/opendevops-nyctaxiweb-optional-backend:v1.0.0"
 
-        # Local retagged names (optional)
+        // Local retagged names (optional)
         LOCAL_IMAGE_FRONTEND = "my-custom-frontend:latest"
         LOCAL_IMAGE_BACKEND  = "my-custom-backend:latest"
 
-        # Container names (change freely)
+        // Container names (change freely)
         CONTAINER_FRONTEND = "frontend-renamed"
         CONTAINER_BACKEND  = "backend-renamed"
     }
